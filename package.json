@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@builder.io/react": "^3.2.6",
+    "react-router-dom": "^6.23.1"
+  }
+}
