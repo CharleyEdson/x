@@ -2,15 +2,16 @@
 import styles from './app.module.css';
 import { Route, Routes } from 'react-router-dom'
  
-import NxWelcome from './nx-welcome';
-import BuilderHomePage from './pages/BuilderHomePage/BuilderHomePage'
+// import BuilderHomePage from './pages/BuilderHomePage/BuilderHomePage'
+import HomePage from './pages/Home/HomePage';
+import { CatchAllRoute } from '@x/builderio';
 
 export function App() {
   return (
     <Routes>
-        {/* <Route path="/" element={<Home />}></Route> */}
-        <Route path="/builder" element={<BuilderHomePage />}></Route>
-        <Route path="*" element={<BuilderHomePage />}></Route>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/builder" element={<CatchAllRoute />}></Route>
+        <Route path="/builder/*" element={<CatchAllRoute />}></Route>
       </Routes>
   );
 }
