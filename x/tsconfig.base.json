@@ -15,8 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@x/blog": ["libs/blog/src/index.ts"],
       "@x/builderio": ["libs/builderio/src/index.ts"],
-      "@x/navbar": ["libs/navbar/src/index.ts"]
+      "@x/navbar": ["libs/navbar/src/index.ts"],
+      "@x/navbar2": ["libs/navbar2/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
